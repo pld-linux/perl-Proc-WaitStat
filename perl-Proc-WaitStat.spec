@@ -7,7 +7,7 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Proc/Proc-WaitStat-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Proc/Proc-WaitStat-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-IPC-Signal
@@ -16,12 +16,12 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Proc-WaitStat module contains functions for interpreting and acting on wait
-status values. 
+Proc-WaitStat module contains functions for interpreting and acting on
+wait status values.
 
 %description -l pl
-Modu³ Proc-WaitStat zawiera funkcje do interpretowania warto¶ci zwracanych
-przez wait() i podejmowania okre¶lonych dzia³añ.
+Modu³ Proc-WaitStat zawiera funkcje do interpretowania warto¶ci
+zwracanych przez wait() i podejmowania okre¶lonych dzia³añ.
 
 %prep
 %setup -q -n Proc-WaitStat-%{version}
