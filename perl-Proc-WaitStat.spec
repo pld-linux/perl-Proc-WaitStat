@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Proc
 %define	pnam	WaitStat
-Summary:	Proc-WaitStat perl module
-Summary(pl):	Modu³ perla Proc-WaitStat
+Summary:	Proc::WaitStat perl module
+Summary(pl):	Modu³ perla Proc::WaitStat
 Name:		perl-Proc-WaitStat
 Version:	1.00
 Release:	6
@@ -16,11 +16,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Proc-WaitStat module contains functions for interpreting and acting on
+Proc::WaitStat module contains functions for interpreting and acting on
 wait status values.
 
 %description -l pl
-Modu³ Proc-WaitStat zawiera funkcje do interpretowania warto¶ci
+Modu³ Proc::WaitStat zawiera funkcje do interpretowania warto¶ci
 zwracanych przez wait() i podejmowania okre¶lonych dzia³añ.
 
 %prep
