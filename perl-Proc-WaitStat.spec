@@ -28,7 +28,7 @@ zwracanych przez wait() i podejmowania okre¶lonych dzia³añ.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
