@@ -29,7 +29,7 @@ zwracanych przez wait() i podejmowania okre¶lonych dzia³añ.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
