@@ -3,7 +3,7 @@ Summary:	Proc-WaitStat perl module
 Summary(pl):	Modu³ perla Proc-WaitStat
 Name:		perl-Proc-WaitStat
 Version:	1.00
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -12,6 +12,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Proc/Proc-WaitStat-%{vers
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-IPC-Signal
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
