@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Proc
 %define	pnam	WaitStat
-%include	/usr/lib/rpm/macros.perl
 Summary:	Proc-WaitStat perl module
 Summary(pl):	Modu³ perla Proc-WaitStat
 Name:		perl-Proc-WaitStat
 Version:	1.00
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -25,7 +24,7 @@ Modu³ Proc-WaitStat zawiera funkcje do interpretowania warto¶ci
 zwracanych przez wait() i podejmowania okre¶lonych dzia³añ.
 
 %prep
-%setup -q -n Proc-WaitStat-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
