@@ -27,7 +27,7 @@ zwracanych przez wait() i podejmowania okre¶lonych dzia³añ.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
