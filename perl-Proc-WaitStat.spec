@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	Proc-WaitStat perl module
 Summary(pl):	Modu³ perla Proc-WaitStat
 Name:		perl-Proc-WaitStat
@@ -8,11 +8,11 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Proc/Proc-WaitStat-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-IPC-Signal
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-Requires:	perl-IPC-Signal
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
