@@ -13,7 +13,7 @@ BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-IPC-Signal
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Proc-WaitStat module contains functions for interpreting and acting on wait
@@ -22,7 +22,6 @@ status values.
 %description -l pl
 Modu³ Proc-WaitStat zawiera funkcje do interpretowania warto¶ci zwracanych
 przez wait() i podejmowania okre¶lonych dzia³añ.
-
 
 %prep
 %setup -q -n Proc-WaitStat-%{version}
