@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_with	tests	# perform "make test" - working database connection required
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Proc
 %define	pnam	WaitStat
@@ -6,7 +10,8 @@ Summary(pl):	Modu³ perla Proc::WaitStat
 Name:		perl-Proc-WaitStat
 Version:	1.00
 Release:	7
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b911bd579b6b142391b21de1efa30c95
@@ -32,10 +37,13 @@ zwracanych przez wait() i podejmowania okre¶lonych dzia³añ.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
