@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" - working database connection required
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Proc
-%define	pnam	WaitStat
+%define		pdir	Proc
+%define		pnam	WaitStat
 Summary:	Proc::WaitStat perl module
 Summary(pl):	Modu³ perla Proc::WaitStat
 Name:		perl-Proc-WaitStat
