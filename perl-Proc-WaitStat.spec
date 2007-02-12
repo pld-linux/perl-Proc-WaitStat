@@ -6,7 +6,7 @@
 %define		pdir	Proc
 %define		pnam	WaitStat
 Summary:	Proc::WaitStat perl module
-Summary(pl):	Modu≥ perla Proc::WaitStat
+Summary(pl.UTF-8):   Modu≈Ç perla Proc::WaitStat
 Name:		perl-Proc-WaitStat
 Version:	1.00
 Release:	8
@@ -25,9 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Proc::WaitStat module contains functions for interpreting and acting on
 wait status values.
 
-%description -l pl
-Modu≥ Proc::WaitStat zawiera funkcje do interpretowania warto∂ci
-zwracanych przez wait() i podejmowania okre∂lonych dzia≥aÒ.
+%description -l pl.UTF-8
+Modu≈Ç Proc::WaitStat zawiera funkcje do interpretowania warto≈õci
+zwracanych przez wait() i podejmowania okre≈õlonych dzia≈Ça≈Ñ.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
