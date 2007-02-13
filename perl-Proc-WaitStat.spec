@@ -6,7 +6,7 @@
 %define		pdir	Proc
 %define		pnam	WaitStat
 Summary:	Proc::WaitStat perl module
-Summary(pl.UTF-8):   Moduł perla Proc::WaitStat
+Summary(pl.UTF-8):	Moduł perla Proc::WaitStat
 Name:		perl-Proc-WaitStat
 Version:	1.00
 Release:	8
