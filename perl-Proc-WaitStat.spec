@@ -9,7 +9,7 @@ Summary:	Proc::WaitStat perl module
 Summary(pl.UTF-8):	Moduł perla Proc::WaitStat
 Name:		perl-Proc-WaitStat
 Version:	1.00
-Release:	8
+Release:	9
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
