@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test" - working database connection required
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Proc
 %define		pnam	WaitStat
+%include	/usr/lib/rpm/macros.perl
 Summary:	Proc::WaitStat perl module
 Summary(pl.UTF-8):	Moduł perla Proc::WaitStat
 Name:		perl-Proc-WaitStat
@@ -15,15 +15,16 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b911bd579b6b142391b21de1efa30c95
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Proc-WaitStat/
 BuildRequires:	perl-IPC-Signal
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Proc::WaitStat module contains functions for interpreting and acting on
-wait status values.
+Proc::WaitStat module contains functions for interpreting and acting
+on wait status values.
 
 %description -l pl.UTF-8
 Moduł Proc::WaitStat zawiera funkcje do interpretowania wartości
