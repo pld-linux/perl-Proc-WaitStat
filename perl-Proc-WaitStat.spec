@@ -4,7 +4,6 @@
 
 %define		pdir	Proc
 %define		pnam	WaitStat
-%include	/usr/lib/rpm/macros.perl
 Summary:	Proc::WaitStat perl module
 Summary(pl.UTF-8):	Moduł perla Proc::WaitStat
 Name:		perl-Proc-WaitStat
